@@ -1,20 +1,20 @@
 
-public class BoardGUI {
+public class Board {
     private int[][] board;
-    int k = 10;
-    int c = 6;
+    int k;
+    int c;
+    public void setsize(int a,int d){
+        k = a;
+        c = d;
+    } 
+    
 
-    public static void main(String[] args) {
+    
+    
 
-        BoardGUI board = new BoardGUI(); // create a new board
-
-        System.out.println(board);
-
-    }
-
-    public BoardGUI() {
+    public Board() {
         // create a new board
-
+        setsize(5, 7);
         this.board = new int[k][c];
         for (int i = 0; i < k; i++) {
             for (int j = 0; j < c; j++) {
@@ -35,5 +35,5 @@ public class BoardGUI {
         }
         return sb.toString();
     }
-
 }
+
