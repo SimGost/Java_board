@@ -6,10 +6,6 @@ public class Board {
     int c;
     
     
-    
-
-    
-    
 
     public Board() {
         // creating a new board
